@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65AFEC351F0043F4000B1974 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AFEC341F0043F4000B1974 /* TableViewController.swift */; };
 		65E991461EFF266600DC54CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E991451EFF266600DC54CD /* AppDelegate.swift */; };
 		65E991481EFF266600DC54CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E991471EFF266600DC54CD /* ViewController.swift */; };
 		65E9914B1EFF266600DC54CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E991491EFF266600DC54CD /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65AFEC341F0043F4000B1974 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		65E991421EFF266600DC54CD /* JTCalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTCalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E991451EFF266600DC54CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E991471EFF266600DC54CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				65E991451EFF266600DC54CD /* AppDelegate.swift */,
 				65E991471EFF266600DC54CD /* ViewController.swift */,
+				65AFEC341F0043F4000B1974 /* TableViewController.swift */,
 				65E9915B1EFF36D500DC54CD /* CellView.swift */,
 				65E9915D1EFF371B00DC54CD /* CircleView.swift */,
 				65E9915F1EFF374A00DC54CD /* UIView+.swift */,
@@ -210,6 +213,7 @@
 				65E9916C1EFF377000DC54CD /* Date+Utilities.swift in Sources */,
 				65E9916A1EFF377000DC54CD /* Date+Formatting.swift in Sources */,
 				65E9916B1EFF377000DC54CD /* Date+Math.swift in Sources */,
+				65AFEC351F0043F4000B1974 /* TableViewController.swift in Sources */,
 				65E9915C1EFF36D500DC54CD /* CellView.swift in Sources */,
 				65E9916D1EFF377000DC54CD /* DateComponents+Utilities.swift in Sources */,
 				65E991601EFF374A00DC54CD /* UIView+.swift in Sources */,
