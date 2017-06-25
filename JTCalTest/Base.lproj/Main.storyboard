@@ -110,10 +110,44 @@
                                     <outlet property="ibCalendarDelegate" destination="BYZ-38-t0r" id="zAK-8X-2Su"/>
                                 </connections>
                             </collectionView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yJB-Qu-1GU">
+                                <rect key="frame" x="273" y="423" width="94" height="29"/>
+                                <connections>
+                                    <action selector="offsetChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QXd-5j-Fff"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bKu-pR-1BM">
+                                <rect key="frame" x="273" y="460" width="94" height="29"/>
+                                <connections>
+                                    <action selector="slownessChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YSP-cd-yiM"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offset: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR9-Yc-nYV">
+                                <rect key="frame" x="16" y="424.5" width="249" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slowness: 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-jY-B8n">
+                                <rect key="frame" x="16" y="461.5" width="249" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yJB-Qu-1GU" firstAttribute="leading" secondItem="aR9-Yc-nYV" secondAttribute="trailing" constant="8" id="4z0-xn-RIb"/>
                             <constraint firstItem="FHA-a4-DmI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="664-XT-QLk"/>
+                            <constraint firstItem="aR9-Yc-nYV" firstAttribute="centerY" secondItem="yJB-Qu-1GU" secondAttribute="centerY" id="DbV-WU-lQH"/>
+                            <constraint firstAttribute="trailing" secondItem="yJB-Qu-1GU" secondAttribute="trailing" constant="8" id="XFH-8c-j6U"/>
+                            <constraint firstItem="aR9-Yc-nYV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ahW-nj-Tne"/>
+                            <constraint firstAttribute="trailing" secondItem="bKu-pR-1BM" secondAttribute="trailing" constant="8" id="bGD-AK-ugO"/>
+                            <constraint firstItem="bKu-pR-1BM" firstAttribute="leading" secondItem="4f6-jY-B8n" secondAttribute="trailing" constant="8" id="cBH-Cm-7ue"/>
+                            <constraint firstItem="4f6-jY-B8n" firstAttribute="centerY" secondItem="bKu-pR-1BM" secondAttribute="centerY" id="eRK-l0-uwc"/>
+                            <constraint firstItem="4f6-jY-B8n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fqE-V1-zxz"/>
+                            <constraint firstItem="bKu-pR-1BM" firstAttribute="top" secondItem="yJB-Qu-1GU" secondAttribute="bottom" constant="8" id="h5g-FB-Jvg"/>
+                            <constraint firstItem="yJB-Qu-1GU" firstAttribute="top" secondItem="FHA-a4-DmI" secondAttribute="bottom" constant="8" id="i7E-B2-G7c"/>
                             <constraint firstItem="FHA-a4-DmI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tLz-A8-CTk"/>
                             <constraint firstItem="FHA-a4-DmI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ucj-Vh-EuQ"/>
                         </constraints>
@@ -121,6 +155,10 @@
                     <navigationItem key="navigationItem" title="Title" id="y8N-Bc-oDy"/>
                     <connections>
                         <outlet property="calendarView" destination="FHA-a4-DmI" id="mD0-k7-h6t"/>
+                        <outlet property="offsetLabel" destination="aR9-Yc-nYV" id="9EJ-h9-74Z"/>
+                        <outlet property="offsetStepper" destination="yJB-Qu-1GU" id="VpM-80-zz4"/>
+                        <outlet property="slownessLabel" destination="4f6-jY-B8n" id="MwV-FQ-7Bn"/>
+                        <outlet property="slownessStepper" destination="bKu-pR-1BM" id="s90-F5-WxT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
