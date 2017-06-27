@@ -63,8 +63,17 @@ class ViewController: UIViewController {
                                      with coordinator: UIViewControllerTransitionCoordinator) {
         coordinator.animate(alongsideTransition: nil) { _ in
             self.resizeConstraint(self.lastDateSelected ?? Date())
-            self.calendarView.reloadData()
-            self.select(date: self.lastDateSelected ?? Date(), animated: false)
+
+            // This works:
+//            self.calendarView.reloadData()
+//            self.select(date: self.lastDateSelected ?? Date(), animated: false)
+
+            // This works:
+//            self.calendarView.reloadData(withanchor: self.lastDateSelected ?? Date())
+//            self.select(date: self.lastDateSelected ?? Date(), animated: false)
+
+            // This doesn't work:
+            self.calendarView.reloadData(withanchor: self.lastDateSelected ?? Date())
         }
     }
 
