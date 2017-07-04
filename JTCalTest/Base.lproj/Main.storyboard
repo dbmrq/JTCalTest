@@ -56,8 +56,8 @@
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
-                                                            <exclude reference="xiY-3D-CaJ"/>
                                                             <exclude reference="aJN-DB-sxk"/>
+                                                            <exclude reference="xiY-3D-CaJ"/>
                                                         </mask>
                                                     </variation>
                                                 </view>
@@ -67,7 +67,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yed-Cw-JoB" customClass="CircleView" customModule="JTCalTest" customModuleProvider="target">
-                                                    <rect key="frame" x="37.5" y="50" width="3" height="3"/>
+                                                    <rect key="frame" x="38" y="50" width="3" height="3"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="3" id="5HC-uV-J9r"/>
@@ -110,10 +110,19 @@
                                     <outlet property="ibCalendarDelegate" destination="BYZ-38-t0r" id="zAK-8X-2Su"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDI-bw-5do">
+                                <rect key="frame" x="16" y="423" width="47" height="30"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfG-e9-Wug"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FHA-a4-DmI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="664-XT-QLk"/>
+                            <constraint firstItem="tDI-bw-5do" firstAttribute="leading" secondItem="FHA-a4-DmI" secondAttribute="leading" id="cqk-PN-VCw"/>
+                            <constraint firstItem="tDI-bw-5do" firstAttribute="top" secondItem="FHA-a4-DmI" secondAttribute="bottom" constant="8" symbolic="YES" id="eSZ-pV-MkG"/>
                             <constraint firstItem="FHA-a4-DmI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tLz-A8-CTk"/>
                             <constraint firstItem="FHA-a4-DmI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ucj-Vh-EuQ"/>
                         </constraints>

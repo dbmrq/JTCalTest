@@ -30,14 +30,11 @@ class ViewController: UIViewController, JTAppleCalendarViewDelegate, JTAppleCale
         return currentDate.offset(.month, +dateOffset).endOfMonth
     }
 
-    public func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
+    @IBAction func reloadButtonTouchUpInside(_ sender: Any) {
+        calendarView.reloadData()
+    }
 
-        print("# configureCalendar")
-        print("first visible date: " +
-            (calendarView.visibleDates().monthDates.first?.date.shortDateString ?? "nil"))
-        print("startDate: \(startDate.shortDateString)")
-        print("endDate:   \(endDate.shortDateString)")
-        print("")
+    public func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
 
         return ConfigurationParameters(startDate: startDate, endDate: endDate,
                                        numberOfRows: 6, generateInDates: .forAllMonths,
@@ -127,10 +124,6 @@ class ViewController: UIViewController, JTAppleCalendarViewDelegate, JTAppleCale
         } else {
             self.calendarView.selectDates([firstVisibleDate])
         }
-        print("---")
-        print("")
-        print("# didScroll")
-        print("")
         calendarView.reloadData()
         calendarView.scrollToDate(firstVisibleDate, triggerScrollToDateDelegate: false,
                                   animateScroll: false)
