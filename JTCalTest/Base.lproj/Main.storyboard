@@ -111,8 +111,8 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDI-bw-5do">
-                                <rect key="frame" x="16" y="423" width="47" height="30"/>
-                                <state key="normal" title="Reload"/>
+                                <rect key="frame" x="16" y="423" width="146" height="30"/>
+                                <state key="normal" title="Reload 100000 times"/>
                                 <connections>
                                     <action selector="reloadButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfG-e9-Wug"/>
                                 </connections>

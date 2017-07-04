@@ -31,7 +31,9 @@ class ViewController: UIViewController, JTAppleCalendarViewDelegate, JTAppleCale
     }
 
     @IBAction func reloadButtonTouchUpInside(_ sender: Any) {
-        calendarView.reloadData()
+        for _ in 0...100000 {
+            self.calendarView.reloadData()
+        }
     }
 
     public func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
